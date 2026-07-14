@@ -1,0 +1,22 @@
+{
+  "name": "sentinel-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered Decision Intelligence Platform for Zero-Harm Industrial Operations.",
+  "packageManager": "pnpm@10.8.0",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.8.0"
+  },
+  "scripts": {
+    "dev": "echo \"Apps will be initialized in Package 2\"",
+    "build": "echo \"Build pipeline coming soon\"",
+    "lint": "echo \"Lint pipeline coming soon\"",
+    "format": "prettier --write .",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.5",
+    "typescript": "^5.9.3"
+  }
+}
