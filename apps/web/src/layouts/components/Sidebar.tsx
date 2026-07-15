@@ -6,10 +6,9 @@ export function Sidebar() {
       className="
         hidden
         lg:flex
-        w-72
+        w-64
         shrink-0
         border-r
-        bg-background
       "
     >
       <div className="p-6"><Brand/></div>

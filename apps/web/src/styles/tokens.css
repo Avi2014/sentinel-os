@@ -1,32 +1,54 @@
 :root {
+  /* ==========================
+     Radius
+     ========================== */
 
-  /* Radius */
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
 
-  --radius-xs: 4px;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
-  --radius-xl: 18px;
+  /* ==========================
+     Spacing
+     8pt Grid
+     ========================== */
 
-  /* Spacing */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+  --space-10: 5rem;
 
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 24px;
-  --space-6: 32px;
-  --space-7: 40px;
-  --space-8: 48px;
+  /* ==========================
+     Elevation
+     ========================== */
 
-  /* Shadows */
+  --shadow-xs: 0 1px 2px rgb(0 0 0 / 0.05);
 
-  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06);
+  --shadow-sm: 0 2px 4px rgb(0 0 0 / 0.06);
 
   --shadow-md:
-    0 4px 12px rgb(0 0 0 / 0.08);
+    0 8px 24px rgb(0 0 0 / 0.08);
 
   --shadow-lg:
-    0 12px 24px rgb(0 0 0 / 0.12);
+    0 16px 40px rgb(0 0 0 / 0.12);
 
+  --shadow-xl:
+    0 24px 64px rgb(0 0 0 / 0.16);
+
+  /* ==========================
+     Motion
+     ========================== */
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
 }
