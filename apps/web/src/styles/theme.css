@@ -1,0 +1,36 @@
+:root {
+
+  --background: #ffffff;
+  --foreground: #111827;
+
+  --surface: #f9fafb;
+
+  --primary: #2563eb;
+  --primary-foreground: white;
+
+  --secondary: #e5e7eb;
+  --secondary-foreground: #111827;
+
+  --border: #e5e7eb;
+
+}
+
+.dark {
+
+  --background: #09090b;
+
+  --foreground: #fafafa;
+
+  --surface: #18181b;
+
+  --primary: #3b82f6;
+
+  --primary-foreground: white;
+
+  --secondary: #27272a;
+
+  --secondary-foreground: white;
+
+  --border: #27272a;
+
+}
