@@ -11,9 +11,7 @@ export function bootstrap() {
   const root = document.getElementById("root");
 
   if (!root) {
-    throw new Error(
-      "Root element '#root' not found."
-    );
+    throw new Error("Root element '#root' not found.");
   }
 
   createRoot(root).render(
@@ -21,6 +19,6 @@ export function bootstrap() {
       <ErrorBoundary>
         <App />
       </ErrorBoundary>
-    </StrictMode>
+    </StrictMode>,
   );
 }

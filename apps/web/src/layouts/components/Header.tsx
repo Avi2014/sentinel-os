@@ -1,18 +1,24 @@
+import { HeaderActions } from "@components/navigation";
+
 export function Header() {
   return (
     <header
       className="
-    flex
-    h-16
-    items-center
-    justify-between
-    border-b
-    px-6
-  "
+        flex
+        h-16
+        items-center
+        justify-between
+        border-b
+        border-(--border)
+        bg-(--surface)
+        px-6
+      "
     >
-      <span>SentinelOS</span>
+      <div>
+        <h1 className="text-base font-semibold">SentinelOS</h1>
+      </div>
 
-      <span className="text-sm opacity-60">Enterprise Platform</span>
+      <HeaderActions />
     </header>
   );
 }

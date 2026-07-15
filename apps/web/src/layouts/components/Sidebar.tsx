@@ -1,4 +1,4 @@
-import { Brand } from "@/components/common/Brand";
+import { SidebarHeader } from "@components/navigation";
 
 export function Sidebar() {
   return (
@@ -8,10 +8,17 @@ export function Sidebar() {
         lg:flex
         w-64
         shrink-0
+        flex-col
         border-r
+        border-(--border)
+        bg-(--surface)
       "
     >
-      <div className="p-6"><Brand/></div>
+      <SidebarHeader />
+
+      <div className="flex-1 p-4">
+        <p className="text-sm text-(--muted)">Navigation coming soon</p>
+      </div>
     </aside>
   );
 }
