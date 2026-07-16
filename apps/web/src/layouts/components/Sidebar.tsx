@@ -1,4 +1,4 @@
-import { SidebarHeader } from "@components/navigation";
+import { Navigation, SidebarHeader } from "@/components/navigation";
 
 export function Sidebar() {
   return (
@@ -17,7 +17,7 @@ export function Sidebar() {
       <SidebarHeader />
 
       <div className="flex-1 p-4">
-        <p className="text-sm text-(--muted)">Navigation coming soon</p>
+        <Navigation />
       </div>
     </aside>
   );

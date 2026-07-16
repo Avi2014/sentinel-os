@@ -1,4 +1,4 @@
-import { HeaderActions } from "@components/navigation";
+import { HeaderActions } from "@/components/navigation";
 
 export function Header() {
   return (
