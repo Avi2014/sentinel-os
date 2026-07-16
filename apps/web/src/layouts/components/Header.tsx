@@ -15,7 +15,16 @@ export function Header() {
       "
     >
       <div>
-        <h1 className="text-base font-semibold">SentinelOS</h1>
+        <h1 className="text-lg font-semibold tracking-tight">SentinelOS</h1>
+
+        <p
+          className="
+      text-xs
+      text-[var(--muted)]
+    "
+        >
+          Enterprise Monitoring Platform
+        </p>
       </div>
 
       <HeaderActions />
