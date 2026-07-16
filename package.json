@@ -5,17 +5,20 @@
   "description": "AI-powered Decision Intelligence Platform for Zero-Harm Industrial Operations.",
   "packageManager": "pnpm@10.8.0",
   "engines": {
-    "node": ">=22.0.0",
-    "pnpm": ">=10.8.0"
+  "node": ">=22.0.0",
+  "pnpm": ">=10.8.0"
   },
   "scripts": {
-    "dev": "echo \"Apps will be initialized in Package 2\"",
-    "build": "echo \"Build pipeline coming soon\"",
-    "lint": "echo \"Lint pipeline coming soon\"",
-    "format": "prettier --write .",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
     "check": "tsc --noEmit"
   },
-  "devDependencies": {
+    "devDependencies": {
     "prettier": "^3.9.5",
     "typescript": "^5.9.3"
   }

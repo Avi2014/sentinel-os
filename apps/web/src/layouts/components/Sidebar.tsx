@@ -1,5 +1,6 @@
-import { useNavigationStore } from "@/stores";
 import { Navigation, SidebarFooter, SidebarHeader } from "@components/navigation";
+
+import { useNavigationStore } from "@/stores";
 
 export function Sidebar() {
   const collapsed = useNavigationStore((state) => state.collapsed);

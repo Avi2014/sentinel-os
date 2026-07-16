@@ -1,9 +1,8 @@
+import { MobileNavigation } from "@components/navigation";
 import { Outlet } from "react-router-dom";
 
 import { Header } from "./components/Header";
 import { Sidebar } from "./components/Sidebar";
-
-import { MobileNavigation } from "@components/navigation";
 
 export function AppLayout() {
   return (

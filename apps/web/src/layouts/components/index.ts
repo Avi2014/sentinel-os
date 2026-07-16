@@ -1,4 +1,4 @@
 export * from "./Header";
-export * from "./Sidebar";
 export * from "./Main";
 export * from "./PageContainer";
+export * from "./Sidebar";

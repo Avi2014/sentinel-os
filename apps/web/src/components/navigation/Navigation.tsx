@@ -1,12 +1,10 @@
-import { useNavigationStore } from "@stores";
+import { useNavigationStore } from "@/stores";
 
 import { navigation } from "./config";
 import { NavigationItem } from "./NavigationItem";
 
 export function Navigation() {
-  const collapsed = useNavigationStore(
-    (state) => state.collapsed
-  );
+  const collapsed = useNavigationStore((state) => state.collapsed);
 
   return (
     <nav className="space-y-6">
@@ -28,18 +26,9 @@ export function Navigation() {
             </h2>
           )}
 
-          <div
-            className={
-              collapsed
-                ? "flex flex-col items-center gap-2"
-                : "space-y-1"
-            }
-          >
+          <div className={collapsed ? "flex flex-col items-center gap-2" : "space-y-1"}>
             {group.items.map((item) => (
-              <NavigationItem
-                key={item.href}
-                item={item}
-              />
+              <NavigationItem key={item.href} item={item} />
             ))}
           </div>
         </section>

@@ -1,6 +1,6 @@
+import { ThemeToggle } from "@components/common";
 import { Menu, PanelLeft } from "lucide-react";
 
-import { ThemeToggle } from "@components/common";
 import { useNavigationStore } from "@/stores";
 
 export function HeaderActions() {

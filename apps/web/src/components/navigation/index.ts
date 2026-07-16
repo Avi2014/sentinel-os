@@ -1,10 +1,9 @@
 export * from "./AppBrand";
+export * from "./config";
 export * from "./HeaderActions";
 export * from "./MobileNavigation";
 export * from "./Navigation";
 export * from "./NavigationItem";
 export * from "./SidebarFooter";
 export * from "./SidebarHeader";
-
-export * from "./config";
 export * from "./types";

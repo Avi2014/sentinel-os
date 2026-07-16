@@ -1,20 +1,28 @@
-import { AppLayout } from "@/layouts";
-import { HomePage, NotFoundPage } from "@/pages";
 import type { RouteObject } from "react-router-dom";
+
+import { AppLayout } from "@/layouts";
+import { HomePage, LazyLoader, NotFoundPage } from "@/router/lazy";
 
 export const routes: RouteObject[] = [
   {
-    element:<AppLayout/>,
-
-    children:[
-        {
-            path:"/",
-            element:<HomePage/>
-        }
-    ]
-},
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: (
+          <LazyLoader>
+            <HomePage />
+          </LazyLoader>
+        ),
+      },
+    ],
+  },
   {
     path: "*",
-    element: <NotFoundPage />,
+    element: (
+      <LazyLoader>
+        <NotFoundPage />
+      </LazyLoader>
+    ),
   },
 ];

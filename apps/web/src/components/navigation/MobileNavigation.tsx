@@ -1,13 +1,13 @@
 import {
+  Navigation,
+  SidebarFooter,
+  SidebarHeader,
+} from "@components/navigation";
+import {
   Sheet,
   SheetContent,
 } from "@components/ui/sheet";
 
-import {
-  Navigation,
-  SidebarHeader,
-  SidebarFooter,
-} from "@components/navigation";
 import { useNavigationStore } from "@/stores";
 
 export function MobileNavigation() {

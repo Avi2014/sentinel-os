@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-import type { NavigationItemConfig } from "./types";
 import { useNavigationStore } from "@/stores";
+
+import type { NavigationItemConfig } from "./types";
 
 interface NavigationItemProps {
   item: NavigationItemConfig;
