@@ -1,4 +1,4 @@
-import { useNavigationStore } from "@stores";
+import { useNavigationStore } from "@/stores";
 
 export function SidebarFooter() {
   const collapsed = useNavigationStore(

@@ -1,6 +1,5 @@
+import { useNavigationStore } from "@/stores";
 import { AppBrand } from "./AppBrand";
-
-import { useNavigationStore } from "@stores";
 
 export function SidebarHeader() {
   const collapsed = useNavigationStore((state) => state.collapsed);

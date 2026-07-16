@@ -1,9 +1,25 @@
+import {
+  Container,
+  Page,
+  PageHeader,
+  PageSection,
+} from "@components/common";
+
 export function HomePage() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <h1 className="text-3xl font-bold">
-        SentinelOS Platform
-      </h1>
-    </main>
+    <Container>
+      <Page>
+        <PageHeader
+          title="Dashboard"
+          description="Welcome to SentinelOS."
+        />
+
+        <PageSection title="Overview">
+          <div className="rounded-xl border border-[var(--border)] p-6">
+            Dashboard widgets will be added in the next milestone.
+          </div>
+        </PageSection>
+      </Page>
+    </Container>
   );
 }

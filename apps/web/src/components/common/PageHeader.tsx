@@ -12,9 +12,9 @@ export function PageHeader({
   actions,
 }: PageHeaderProps) {
   return (
-    <div className="mb-8 flex items-start justify-between">
+    <header className="flex items-start justify-between gap-6">
       <div>
-        <h1 className="text-3xl font-bold">
+        <h1 className="text-3xl font-bold tracking-tight">
           {title}
         </h1>
 
@@ -25,7 +25,11 @@ export function PageHeader({
         )}
       </div>
 
-      {actions}
-    </div>
+      {actions && (
+        <div className="flex items-center gap-3">
+          {actions}
+        </div>
+      )}
+    </header>
   );
 }

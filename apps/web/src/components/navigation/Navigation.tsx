@@ -1,5 +1,5 @@
+import { useNavigationStore } from "@stores";
 
-import { useNavigationStore } from "@/stores";
 import { navigation } from "./config";
 import { NavigationItem } from "./NavigationItem";
 
@@ -21,7 +21,7 @@ export function Navigation() {
                 font-semibold
                 uppercase
                 tracking-wider
-                text-(--muted)
+                text-[var(--muted)]
               "
             >
               {group.title}

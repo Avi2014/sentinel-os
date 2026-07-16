@@ -1,5 +1,6 @@
 export * from "./AppBrand";
 export * from "./HeaderActions";
+export * from "./MobileNavigation";
 export * from "./Navigation";
 export * from "./NavigationItem";
 export * from "./SidebarFooter";

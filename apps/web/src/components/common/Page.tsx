@@ -1,17 +1,17 @@
 import type { PropsWithChildren } from "react";
 
-interface ContainerProps extends PropsWithChildren {
+interface PageProps extends PropsWithChildren {
   className?: string;
 }
 
-export function Container({
+export function Page({
   children,
   className = "",
-}: ContainerProps) {
+}: PageProps) {
   return (
     <div
       className={[
-        "mx-auto w-full max-w-screen-2xl",
+        "flex flex-col gap-8",
         className,
       ].join(" ")}
     >

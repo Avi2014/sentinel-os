@@ -9,7 +9,7 @@ interface NavigationItemProps {
 
 export function NavigationItem({ item }: NavigationItemProps) {
   const collapsed = useNavigationStore((state) => state.collapsed);
-
+  const closeMobile = useNavigationStore((state) => state.closeMobile);
   const Icon = item.icon;
 
   if (item.disabled) {
@@ -52,6 +52,7 @@ export function NavigationItem({ item }: NavigationItemProps) {
     <NavLink
       to={item.href}
       title={collapsed ? item.title : undefined}
+      onClick={closeMobile}
       className={({ isActive }) =>
         [
           "flex rounded-lg transition-all duration-200",
