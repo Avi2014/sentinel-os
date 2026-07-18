@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+.ignored_node_modules/
+
+# Build
+dist/
+
+# Environment
+.env
