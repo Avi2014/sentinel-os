@@ -1,7 +1,12 @@
 // export * from "./health-check.js";
+export * from "./asset.js";
+export * from "./sensor.js";
 export * from "./organization.js";
 export * from "./user.js";
 export * from "./role.js";
 export * from "./permission.js";
 export * from "./user-role.js";
 export * from "./role-permission.js";
+export * from "./telemetry.js";
+export * from "./alert.js";
+export * from "./incident.js";
