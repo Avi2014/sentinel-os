@@ -5,7 +5,17 @@ info:
 
 http:
   method: GET
-  url: ""
+  url: http://localhost:3001/api/v1/auth/me
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTg2MjliMi0yOWRkLTRiYTYtOTRmNC1kNjQwZjkxNGZhMzciLCJvcmdhbml6YXRpb25JZCI6IjdhN2NmNWY1LTYxN2QtNDFjMi1hNDdhLWEzMjJhNmQyZmNkOSIsImVtYWlsIjoicHJpbmNlQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg0MzQ2ODAzLCJleHAiOjE3ODQzNDc3MDN9.EtHmWrGVEV08OfK1KWpTo0bKzTD_XStFpIcK9lCnLUU
+  body:
+    type: json
+    data: |-
+      {
+        "email": "prince@example.com",
+        "password": "Password@123"
+      }
   auth: inherit
 
 settings:
