@@ -1,0 +1,19 @@
+[project]
+name = "sentinel-ai"
+version = "0.1.0"
+description = "SentinelOS AI Platform"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "langchain",
+    "langgraph",
+    "google-generativeai",
+    "pydantic>=2.0",
+    "python-dotenv",
+]
+
+[tool.uvicorn]
+factory = false
+reload = true
