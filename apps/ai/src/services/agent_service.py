@@ -1,11 +1,15 @@
-from src.agents.registry import AgentRegistry
+from src.services.workflow_service import WorkflowService
 
 
 class AgentService:
 
     def __init__(self):
-        self.registry = AgentRegistry()
 
-    def invoke(self, agent_name, payload):
-        agent = self.registry.get(agent_name)
-        return agent.invoke(payload)
+        self.workflow = WorkflowService()
+
+    def invoke(self, workflow, payload):
+
+        return self.workflow.invoke(
+            workflow,
+            payload,
+        )
