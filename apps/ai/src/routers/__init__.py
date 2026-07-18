@@ -1,1 +1,7 @@
-from . import health
+from . import (
+    health,
+    decision,
+    risk,
+    incident,
+    report,
+)

@@ -4,4 +4,6 @@ from .base import BaseAgent
 class ReportAgent(BaseAgent):
 
     def execute(self, payload):
-        return {}
+        return {
+            "summary": None
+        }

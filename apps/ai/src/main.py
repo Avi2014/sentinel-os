@@ -1,11 +1,19 @@
 from fastapi import FastAPI
 
-from src.api import router
-from src.settings import settings
-
-app = FastAPI(
-    title=settings.APP_NAME,
-    version="0.1.0"
+from src.routers import (
+    health,
+    decision,
+    risk,
+    incident,
+    report,
 )
 
-app.include_router(router)
+app = FastAPI(
+    title="SentinelOS AI"
+)
+
+app.include_router(health.router)
+app.include_router(decision.router)
+app.include_router(risk.router)
+app.include_router(incident.router)
+app.include_router(report.router)
