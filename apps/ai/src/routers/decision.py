@@ -1,14 +1,30 @@
 from fastapi import APIRouter
-from src.services.agent_service import AgentService
+
+from src.schemas.decision import (
+    DecisionRequest,
+    DecisionResponse,
+)
 
 router = APIRouter(
     prefix="/decision",
     tags=["Decision"],
 )
 
-service = AgentService()
 
+@router.post(
+    "",
+    response_model=DecisionResponse,
+)
+async def decision(
+    request: DecisionRequest,
+):
 
-@router.post("")
-async def decision(payload: dict):
-    return service.invoke("decision", payload)
+    return DecisionResponse(
+        decision="Pending",
+        confidence={
+            "score": 0.0
+        },
+        risk_level="low",
+        recommendations=[],
+        reasoning="Workflow placeholder",
+    )
