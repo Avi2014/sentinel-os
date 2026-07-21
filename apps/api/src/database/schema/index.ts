@@ -9,4 +9,5 @@ export * from "./user-role.js";
 export * from "./role-permission.js";
 export * from "./telemetry.js";
 export * from "./alert.js";
+export * from "./maintenance.js";
 export * from "./incident.js";

@@ -1,5 +1,7 @@
 import { env } from "./env.js";
+import swaggerUi from "swagger-ui-express";
 
+import { swaggerSpec } from "./swagger.js";
 export const appConfig = {
   name: "SentinelOS API",
   version: "0.1.0",

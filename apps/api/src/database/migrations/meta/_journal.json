@@ -57,6 +57,13 @@
       "when": 1784388987507,
       "tag": "0007_woozy_dark_beast",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1784398008826,
+      "tag": "0008_nostalgic_phil_sheldon",
+      "breakpoints": true
     }
   ]
 }
