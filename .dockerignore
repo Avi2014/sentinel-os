@@ -1,0 +1,41 @@
+# Git
+.git
+.gitignore
+
+# Node
+**/node_modules
+**/npm-debug.log
+**/pnpm-debug.log
+**/.pnpm-store
+
+# Build
+**/dist
+**/.next
+**/coverage
+
+# Environment
+**/.env
+**/.env.*
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary
+tmp
+temp
+
+# Documentation
+README.md
+docs
+
+# Docker
+Dockerfile
+docker-compose.yml
