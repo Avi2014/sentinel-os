@@ -1,5 +1,6 @@
 import { Router } from "express";
 // import healthRoutes from "./health.routes.js";
+import { dashboardRouter } from "../modules/dashboard/index.js";
 import { alertsRouter } from "../modules/alerts/routes.js";
 import { assetsRouter } from "../modules/assets/index.js";
 import { authRoutes } from "../modules/auth/index.js";
@@ -14,7 +15,7 @@ const router = Router();
 
 router.use("/health", healthRoutes);
 router.use("/auth", authRoutes);
-
+router.use("/dashboard", dashboardRouter);
 router.use("/users", usersRouter);
 router.use("/assets", assetsRouter);
 router.use("/sensors", sensorsRouter);

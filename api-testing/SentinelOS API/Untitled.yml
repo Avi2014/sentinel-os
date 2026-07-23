@@ -5,16 +5,19 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3001/api/v1/auth/me
+  url: api/v1/dashboard
   headers:
     - name: Authorization
-      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTg2MjliMi0yOWRkLTRiYTYtOTRmNC1kNjQwZjkxNGZhMzciLCJvcmdhbml6YXRpb25JZCI6IjdhN2NmNWY1LTYxN2QtNDFjMi1hNDdhLWEzMjJhNmQyZmNkOSIsImVtYWlsIjoicHJpbmNlQGV4YW1wbGUuY29tIiwiaWF0IjoxNzg0MzQ2ODAzLCJleHAiOjE3ODQzNDc3MDN9.EtHmWrGVEV08OfK1KWpTo0bKzTD_XStFpIcK9lCnLUU
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0OGU2Y2I3NS0yNDUxLTRhYjItODM5NC03OWFiNzk5ZmIyNWQiLCJvcmdhbml6YXRpb25JZCI6IjdhN2NmNWY1LTYxN2QtNDFjMi1hNDdhLWEzMjJhNmQyZmNkOSIsImVtYWlsIjoiYWRtaW5Ac2VudGluZWxvcy5jb20iLCJpYXQiOjE3ODQ2NTM3MTYsImV4cCI6MTc4NDY1NDYxNn0.eqnPMJwnNmwKXulmEVewkaYR5BHc01tdumPuK04Vj_0
   body:
     type: json
     data: |-
       {
-        "email": "prince@example.com",
-        "password": "Password@123"
+        "organizationId": "7a7cf5f5-617d-41c2-a47a-a322a6d2fcd9",
+        "firstName": "Admin",
+        "lastName": "User",
+        "email": "admin@sentinelos.com",
+        "password": "Password123"
       }
   auth: inherit
 
