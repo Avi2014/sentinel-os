@@ -1,6 +1,6 @@
 import { Skeleton } from "@/components/ui/skeleton";
 
-import { Widget } from "../Widget";
+import { Widget } from "../../Widget";
 
 export function WidgetSkeleton() {
   return (

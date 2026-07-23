@@ -5,8 +5,8 @@
   "description": "AI-powered Decision Intelligence Platform for Zero-Harm Industrial Operations.",
   "packageManager": "pnpm@10.8.0",
   "engines": {
-  "node": ">=22.0.0",
-  "pnpm": ">=10.8.0"
+    "node": ">=22.0.0",
+    "pnpm": ">=10.8.0"
   },
   "scripts": {
     "dev": "vite",
@@ -18,8 +18,9 @@
     "format:check": "prettier . --check",
     "check": "tsc --noEmit"
   },
-    "devDependencies": {
+  "devDependencies": {
     "prettier": "^3.9.5",
+    "prettier-plugin-tailwindcss": "^0.8.1",
     "typescript": "^5.9.3"
   }
 }
